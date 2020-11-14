@@ -1,9 +1,6 @@
 class Admin::ProductsController < ApplicationController
-<<<<<<< HEAD
-=======
   USER_ID, PASSWORD = "jungle", "book"
 
->>>>>>> fix/admin-basic-auth
   before_filter :authenticate
 
   def index
@@ -42,12 +39,7 @@ class Admin::ProductsController < ApplicationController
       :price
     )
   end
-   protected
-  def authenticate
-    authenticate_or_request_with_http_basic do |username, password|
-      username == "Jungle" && password == "book"
-    end
-  end
+
 
 
   
